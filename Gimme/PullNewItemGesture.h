@@ -164,6 +164,7 @@ namespace Gimme
 				Windows::UI::Xaml::Input::PointerEventHandler^ _pointerPressedHandler;
 				Windows::UI::Xaml::Input::PointerEventHandler^ _pointerMovedHandler;
 				Windows::UI::Xaml::Input::PointerEventHandler^ _pointerReleasedHandler;
+				Windows::UI::Xaml::Input::Pointer^ _pointer;
 			};
 		}
 	}

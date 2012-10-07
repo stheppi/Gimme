@@ -121,9 +121,12 @@ void MainPage::InitializeGestures()
 				Gimme::UI::Extensions::FrameworkElementExtension::TranslateY(pullStart, min(e->StartPosition.Y + minDistance, e->CurrentPosition.Y));
 				if(e->Distance >= minDistance)
 					pullNotification->Text= L"Release to add a new item...";
+				else
+					pullNotification->Text= L"Pull to add a new item...";
 			}
 			else
 			{
+				pullNotification->Text= L"Pull to add a new item...";
 				Gimme::UI::Extensions::FrameworkElementExtension::TranslateY(pullStart, 0);
 			}
 

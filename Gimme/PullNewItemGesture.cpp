@@ -40,6 +40,11 @@ namespace Gimme
 
 			void PullNewItemGesture::OnPointerReleased(Object^ sender, PointerRoutedEventArgs^ args)
 			{
+				if(_pointer)
+				{
+					Target->ReleasePointerCapture(_pointer);
+					_pointer = nullptr;
+				}
 				if (!IsAllowed)
 					_isPointerDown = false;
 
@@ -71,6 +76,8 @@ namespace Gimme
 				{
 					_isPointerDown = true;
 					//notify the gesture has been detected
+					_pointer = args->Pointer;
+					Target->CapturePointer(_pointer);
 					RaiseDetectedEvent(true);
 					PullNewItemEventArgs^ e = ref new PullNewItemEventArgs(_startPoint, _startPoint, PullNewItemAction::Started);
 					Notify(this, e);
@@ -94,7 +101,6 @@ namespace Gimme
 					Target->LayoutUpdated -= _layoutUpdatedToken;
 					_layoutUpdatedToken.Value = 0;
 				}
-
 				EditItemGestureBase::OnGestureCompleted();
 			}
 
