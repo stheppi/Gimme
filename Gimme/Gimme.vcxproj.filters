@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>aa136648-3dcf-4965-b2b8-51a43793833e</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{7c32ecec-35c7-481a-acae-7219d5b8de2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Controls">
+      <UniqueIdentifier>{0c0fae7c-4175-41fd-81a3-011127d28e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Extensions">
+      <UniqueIdentifier>{623eaad6-ac11-419b-aa16-311b5b3eacbe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Gestures">
+      <UniqueIdentifier>{283f537d-1cff-4fc8-ac7d-6151baa53a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Converters">
+      <UniqueIdentifier>{1845a18a-aba0-418d-82ca-39bb6d599115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\Data">
+      <UniqueIdentifier>{57f5fbc8-bfd1-44f1-bc20-a6ed51524094}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="ControlDraggedAdorner.cpp">
+      <Filter>UI\Controls</Filter>
+    </ClCompile>
+    <ClCompile Include="DragArrangeGesture.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="EditItemGestureBase.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="GestureBase.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="GestureManager.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="PullNewItemGesture.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="SlideGesture.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="SwipeGesture.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+    <ClCompile Include="TapEditGesture.cpp">
+      <Filter>UI\Gestures</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="ControlDraggedAdorner.h">
+      <Filter>UI\Controls</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationExtension.h">
+      <Filter>UI\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="DependencyObjectExtension.h">
+      <Filter>UI\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameworkElementExtension.h">
+      <Filter>UI\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="ItemsControlExtension.h">
+      <Filter>UI\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualTreeHelperExtension.h">
+      <Filter>UI\Extensions</Filter>
+    </ClInclude>
+    <ClInclude Include="DragArrangeGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="EditItemGestureBase.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="GestureBase.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="GestureManager.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="IGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="PullNewItemGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="SlideGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="SwipeGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="TapEditGesture.h">
+      <Filter>UI\Gestures</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicTimer.h" />
+    <ClInclude Include="BindableBase.h">
+      <Filter>UI\Data</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Themes\Generic.xaml" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>f9b10829-f138-4f83-87a6-26987ae27540</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>1b4d1070-3057-492e-a660-e44d4532f549</UniqueIdentifier>
+    </Filter>
+    <Page Include="Common\StandardStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="Converters">
+      <UniqueIdentifier>{73308ec8-4e15-4bde-be97-8511aef4fccd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{b0d88de3-f810-4234-ab5d-0212a4799ba2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="TodoTask.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="TodoTaskViewModel.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="BooleanToVisibilityConverter.h">
+      <Filter>Converters</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoTask.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="TodoTaskViewModel.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorBrushConverter.h" />
+    <ClInclude Include="BindableBase.h" />
+    <ClInclude Include="TextToLineConverter.h">
+      <Filter>Converters</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Todo_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+    <Page Include="Common\TodoStyles.xaml">
+      <Filter>Common</Filter>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="DKCrayonCrumble.ttf" />
+    <Font Include="lcchalk.ttf" />
+    <Font Include="SketchRockwell-Bold.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Background.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
